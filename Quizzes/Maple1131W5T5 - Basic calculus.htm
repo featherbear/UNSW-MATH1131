@@ -1,0 +1,157 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 15">
+<link id=Main-File rel=Main-File href="Maple1131W5T5%20-%20Basic%20calculus.htm">
+<link rel=File-List
+href="Maple1131W5T5%20-%20Basic%20calculus_files/filelist.xml">
+</head>
+
+<body lang=en-AU style='font-family:Calibri;font-size:11.0pt'>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:13.1361in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:.0215in;width:4.2097in'>
+
+<p style='margin:0in;font-family:"Calibri Light";font-size:20.0pt'>Maple1131W5T5
+- Basic calculus</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0388in;margin-left:.0215in;width:2.2875in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>Friday,
+30 March 2018</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>12:28
+AM</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.4305in;margin-left:0in;width:13.1361in'>
+
+<h1 style='margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'>Question
+One</h1>
+
+<p style='margin:0in'><img
+src="Maple1131W5T5%20-%20Basic%20calculus_files/image001.png" width=1028
+height=397
+alt="Machine generated alternative text:&#10;A function f(x) is definied by &#10;Use Maple to evaluate the following limits. &#10;lim _ f(x) &#10;lim f(x) — &#10;_49/11 &#10;To avoid typing errors, you may copy and paste the following in your command line &#10;-27T -103x +126x2+864X+8641 &#10;x 4+x3 —45 P —189 x—216 &#10;xA4+x "></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>e :=
+abs(x^6+3*x^5-27*x^4-103*x^3+126*x^2+864*x+864)/(x^4+x^3-45*x^2-189*x-216);</code></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>limit(e,x=-3,left);</code></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>limit(e,x=-3,right);</code></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>&nbsp;</code></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>&nbsp;</code></p>
+
+<h1 style='margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'>Question
+Two</h1>
+
+<p style='margin:0in'><img
+src="Maple1131W5T5%20-%20Basic%20calculus_files/image002.png" width=864
+height=483
+alt="Machine generated alternative text:&#10;Find a 10 significant figure approximation to the 8th derivative of &#10;2 &#10;Select the matching answer from this list below &#10;evaluated at x = 5_ &#10;0 0.5364931726 &#10;0 0.3065675272 &#10;0 0.9197025816 &#10;@ 0.766418818 &#10;0 0.3832094090 &#10;0 0.4598512908 &#10;0 &#10;0.6131350544 &#10;0 0.6897769362 &#10;0 0.2299256454 &#10;0 0.8430606998 "></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>evalf(subs(x
+= 5, diff(sin(x^2/(x^4+1))*exp(x), `$`(x, 8))), 10);</code></p>
+
+<p style='margin:0in'><img
+src="Maple1131W5T5%20-%20Basic%20calculus_files/image003.png" width=416
+height=75
+alt="Machine generated alternative text:&#10;exp(x), xS8 &#10;0.766418818 &#10;z 10 "></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>&nbsp;</code></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>&nbsp;</code></p>
+
+<h1 style='margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'>Question
+Three</h1>
+
+<p style='margin:0in'><img
+src="Maple1131W5T5%20-%20Basic%20calculus_files/image004.png" width=885
+height=470
+alt="Machine generated alternative text:&#10;Suppose &#10;determines y as a function of Assuming that the Maple command &#10;eqn + + yA4 = 4- &#10;dy &#10;has been executed; which of the following Maple expressions would find &#10;4 &#10;O &#10;dc &#10;implicitdiff(x.y, eqn); "></p>
+
+<h1 style='margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'>Question
+Four</h1>
+
+<p style='margin:0in'><img
+src="Maple1131W5T5%20-%20Basic%20calculus_files/image005.png" width=998
+height=323
+alt="Machine generated alternative text:&#10;Enter the global maximum and global minimum values for &#10;over the interval [—4, 4] in the boxes below. &#10;+ 42 &#10;+ 105 x &#10;+ 20 x &#10;- 225 x &#10;- 270 &#10;Global maximum value: &#10;Global minimum value: &#10;86968 &#10;-323 &#10;To prevent typing errors, you can copy and paste &#10;p: &#10;in your Maple window "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>p :=
+5*x^6+42*x^5+105*x^4+20*x^3-225*x^2-270*x;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>minimize(p, x = -4
+.. 4);</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>maximize(p, x = -4
+.. 4);</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Maple1131W5T5%20-%20Basic%20calculus_files/image006.png" width=476
+height=150
+alt="Machine generated alternative text:&#10;105 + &#10;4215 —2701 &#10;-323 &#10;86968 "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<h1 style='margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'>Question
+Five</h1>
+
+<p style='margin:0in'><img
+src="Maple1131W5T5%20-%20Basic%20calculus_files/image007.png" width=1257
+height=390
+alt="Machine generated alternative text:&#10;First make sure that x and c are unassigned variables and then enter the Maple command &#10;This tells Maple that c is a postive real number. (You will see more on using &quot;'assume&quot; later) &#10;Next, calculate the improper definite integral of &#10;4 &#10;(6 sin@) + 8 cos @)) e &#10;for x from 0 to DO and assign this to the variable ansl_ (Notice that Maple displays c as to indicate it that an assumption has been made about c.) &#10;Finally calculate the limit of c times ansl as c tends to infinity and enter the limit in the box below (Enter your answer exactly using Maple syntax, not as a decimal.) &#10;10 "></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>e :=
+(6*sin(x)+8*cos(x))*exp(-(4/5)*c*x);</code></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>ans1 :=
+int(e, x = 0 .. infinity);</code></p>
+
+<p><code style='margin:0in;font-family:Consolas;font-size:11.0pt'>limit(c*ans1,
+c = infinity);</code></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Maple1131W5T5%20-%20Basic%20calculus_files/image008.png" width=934
+height=181
+alt="Machine generated alternative text:&#10;4 &#10;(6 sin(x) &#10;ansl : &#10;8 cos(x)) exp &#10;_infinity); &#10;(6 sin(x) + 8 cos(x)) e &#10;10 (16c- 15) &#10;16c- +25 &#10;limit(c ansl, c infinity); "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with Microsoft OneNote 2016.</p>
+
+</div>
+
+</body>
+
+</html>

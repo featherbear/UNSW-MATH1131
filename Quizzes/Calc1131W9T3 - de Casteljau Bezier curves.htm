@@ -1,0 +1,113 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 15">
+<link id=Main-File rel=Main-File
+href="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves.htm">
+<link rel=File-List
+href="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves_files/filelist.xml">
+</head>
+
+<body lang=en-AU style='font-family:Calibri;font-size:11.0pt'>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:14.1048in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:.0215in;width:5.3458in'>
+
+<p style='margin:0in;font-family:"Calibri Light";font-size:20.0pt'>Calc1131W9T3
+- de Casteljau Bezier curves</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0388in;margin-left:.0215in;width:2.1409in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>Tuesday,
+1 May 2018</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>8:30
+PM</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.4097in;margin-left:0in;width:14.1048in'>
+
+<p style='margin:0in'><img
+src="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves_files/image001.png"
+width=1046 height=744
+alt="Machine generated alternative text:&#10;Linear interpolation is a way of parametrising the line between two points. If A = [1, 1] and B = [2, 2] , then the linear interpolation is: &#10;p(t) &#10;= (1 — + tB, 0 s t S 1 &#10;where t represents time. The point p(t) moves with constant velocity from A to B. This construction is shown in the GeoGebra app below. &#10;2.5 &#10;1.5 &#10;0.5 &#10;0.5 &#10;t=O.7 &#10;= (1.7 .7) &#10;1.5 &#10;2.5 &#10;Use the t slider to find the points: &#10;• p(o.2) &#10;• p(0.4) &#10;• p(o.7) &#10;[1.2, 1.2] &#10;[1.7,1.7] &#10;Note: the Maple syntax for the point [1, "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves_files/image002.png"
+width=1338 height=717
+alt="Machine generated alternative text:&#10;For thousands of years; people have used mathematics to describe curves in the plane. So it may come as a surprise that in the early 1960's Pierre Bezier and Paul de Casteljau, two &#10;French car engineers working respectively for Renault and Citroen, independently discovered a new method for describing curves' &#10;Pierre Bezier (1910 - 1999) &#10;Paul de Casteijau (born 1930) &#10;Given the control points A = [1, 1], B = [2, 2] and C = [3, 1] , we construct the associated quadratic de Casteljau-Bezier curve by successive linear interpolations. &#10;The linear de Casteljau-Bezier curve from A to B is the linear interpolation from A to B: &#10;Similarly, the linear de Casteljau-Bezier curve from B to C is the linear interpolation from B to C &#10;Note the syntax for q(t) is of the form [1 + t, 1 — t]. &#10;Once we have two linear de Casteljau-Bezier curves; we can linearly interpolate p(t) and q(t) (our linear interpolations') to create a quadratic de Casteljau-Bezier curve from A to C &#10;r(t) &#10;= (1 — + tq(t) &#10;= (1 - t)2A + 2t(1 - + Pc. "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves_files/image003.png"
+width=1202 height=731
+alt="Machine generated alternative text:&#10;This construction is displayed in the GeoGebra app below: &#10;p(t) B &#10;Find (to two decimal places) the points &#10;t=093 &#10;r(t) = (2.86, 1.13) &#10;• r(0.3) &#10;• r(0.36) — &#10;• r(0.93) — &#10;[1 72, 1.46] &#10;[286, 1&lt;3] "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves_files/image004.png"
+width=1346 height=595
+alt="Machine generated alternative text:&#10;It is always possible to go deeper For example, a cubic de Casteljau Bezier curve is constructed by linear interpolation of two quadratic curves with two common control points The plot &#10;below shows a cubic de Casteljau Bezier curve (the locus of S) with control points A, B, C, D constructed from two quadratic curves with control points A, B, C and B, C, D respectively. &#10;t=042 &#10;s &#10;Note: the Maple syntax for the point [1, 2] is [1, 2] "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves_files/image005.png"
+width=1348 height=785
+alt="Machine generated alternative text:&#10;Points on the line segment AB also have an interpretation as the centre of mass of two appropriate masses a and b at A, B. For example if we put a mass of 3 at A, and a mass of 1 at B i &#10;then the pont of balance will be &#10;According to Archimedes' law of the lever, the centre of mass of the rod AB is the point C , where &#10;Let's normalise this equation, so that the sum of the masses equals 1 &#10;Now if we let &#10;t then this equation becomes &#10;This equation can be re-arranged as &#10;OC &#10;Given the points A = [1, 1], B = [2, 2] with respective masses a &#10;Note: the Maple syntax for the point [1, 2] is [1, 2] &#10;aAC = bCB &#10;CB &#10;(1 - t)AC = tCB &#10;4, the centre of mass is at the point &#10;[11/7: 11/7] &#10;0 0B &#10;3 and b &#10;C "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves_files/image006.png"
+width=1350 height=919
+alt="Machine generated alternative text:&#10;The notion of centre of mass is related to linear; quadratic and even cubic de Casteljau - Bezier curves. Let A &#10;= [1,3] and C &#10;= [2, —2] and consider the (weightless) triangle &#10;ABC &#10;Add variable masses to the verticies of this triangle as follows: &#10;• Place mass m A = (1 —t) at vertex A &#10;• Place mass = 2t(1 — t) at vertex B &#10;• Place mass mc = t at vertex C &#10;The centre of mass of this triangle is: &#10;Hence &#10;Note: the Maple syntax for [0, 1] is [O, 1] &#10;3 &#10;2 &#10;-2 &#10;= (1 — + 2t(1 - 0B + pc. &#10;2 "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves_files/image007.png"
+width=1339 height=697
+alt="Machine generated alternative text:&#10;De Casteljau Bezier curves are important in design, as they allow us to specify a complicated curve by breaking it into simple pieces, and specifying those pieces by just a few control points &#10;each &#10;For example, in the diagram to specify the profile of the hood, we could join two quadratic de Casteljau-Bezier curves7 so that they are differentiable at the point at which they join &#10;4. &#10;1973 Citroen DS Special &#10;Consider two quadratic de Casteljau-Bezier curves: p(t) has control points Al , Bl, Cl and q(t) has control points .42, B2, C2 &#10;• Setting Cl = 242 ensures that the combined curve is continuous &#10;• The direction ofthe tangent top at Cl is the direction ofthe line &#10;• The direction ofthe tangent toq at 142 is the direction ofthe line &#10;O at Cl &#10;SICI &#10;A2B2 "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Calc1131W9T3%20-%20de%20Casteljau%20Bezier%20curves_files/image008.png"
+width=1010 height=462
+alt="Machine generated alternative text:&#10;Hence the piecewise curve &#10;p (2t) &#10;r(t) &#10;q(2t- 1) &#10;is differentiable at Cl when the points &#10;Al &#10;are collinear &#10;1 &#10;1 "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with Microsoft OneNote 2016.</p>
+
+</div>
+
+</body>
+
+</html>
